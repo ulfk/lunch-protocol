@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Essen</title>
+      <meta charset="UTF-8" >
+      <meta name="author" content="Ulf K&uuml;hnle">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+      <link href='essen.css' rel='stylesheet' type='text/css'>
+   </head>
+
+   <body>
+      <div class="input">
+         <h2>Essen eingeben</h2>
+         Datum <input type="text" id="datetime" size="8"> &nbsp;&nbsp;
+         Essen <input type="text" id="inventory"> &nbsp;&nbsp;
+         Preis <input type="text" id="price" size="3"> &nbsp;&nbsp;
+         <input type="hidden" id="invid" value="-1">
+         <button id="save">Speichern</button>
+      </div>
+      <div id="error-messages">
+         <span id="error-messages-close">×</span>
+         <span id="error-messages-text">
+         </span>
+      </div>
+      <div class="protocol_list_container">
+         <h3>Summen je Monat <span class="togglebtn" data-id="protocol_sum_list" data-open="true"></span></h3>
+         <div id="protocol_sum_list">
+         </div>
+         <h3>Konsumierte Essen <span id="protfilter-headline"></span><span class="togglebtn" data-id="protocol_list" data-open="true"></span><span id="protfilter"></span></h3>
+         <div id="protocol_list">
+         </div>
+         <h3>Gespeicherte Essen <span class="togglebtn" data-id="inventory_list_container" data-open="false"></span></h3>
+         <div id="inventory_list_container">
+         <div id="inventry_filter_container">
+           Filter: <input type="text" id="inventory_filter"> <span class="deletefilter hidden" id="invfilterdelete" title="Filter löschen">X</span>
+         </div>
+         <div id="inventory_list" data-orderdir="asc" data-orderby="description">
+         </div>
+         </div>
+      </div>
+      
+      <div id="dialog-confirm" title="Eintrag löschen?" style="display: none;">
+        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span> Der Eintrag wird unwiderruflich gelöscht.</p>
+        <p>Eintrag löschen?</p>
+      </div> 
+
+      <div id="dialog-info" title="Information">
+        <div id="dialog-info-content">
+        </div>
+      </div>      
+   </body>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <script src="essen.js"></script>
+   
+</html>

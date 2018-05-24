@@ -1,0 +1,151 @@
+/* Styles for essen.html */
+
+body {
+   font-family: "Open Sans";
+   margin: 30px;
+}
+.hidden {
+   display: none;
+}
+.input-error {
+   background-color: #ffaaaa;
+}
+#error-messages {
+   background-color: #ee8888;
+   color: #fff0f0;
+   margin-left: 50px;
+   margin-top: 15px;
+   display: none;
+   padding: 12px;
+   border: 1px solid #dd6666;
+   width: 600px;
+   border-radius: 5px;
+}
+#error-messages-close {
+   float: right;
+   margin: -10px -5px 0px 0px;
+   padding-right: 5px;
+   color: #ffdddd;
+   font-size: 19.5px;
+   font-weight: bold;
+   text-shadow: 1px 2px 0 #333;
+   cursor: pointer;
+}
+#error-messages-close:hover {
+   color: #e0c0c0;
+}
+.table {
+   border: 1px solid lightgray;
+   /*background-color: #f8f8f8;*/
+   padding-left: 10px;
+}
+.body {
+   max-height: 200px;
+   overflow:auto;
+}
+.tableProt {
+   width: 510px;
+}
+.bodyProt {
+   width: 510px;
+}
+.tableInv {
+   width: 470px;
+}
+.bodyInv {
+   width: 470px;
+}
+.tableSum {
+   width: 315px;
+}
+.bodySum {
+   width: 315px;
+   cursor: pointer;
+}
+.head {
+   font-weight: bold;
+   border-bottom: 1px solid gray;
+}
+.col {
+   padding: 5px;
+   float: left;
+}
+.colYear {
+   width: 70px;
+}
+.colMonth {
+   width: 130px;
+}
+.colDate {
+   width: 100px;
+}
+.colFood {
+   width: 250px;
+}
+.colPrice {
+   width: 60px;
+   text-align: right;
+}
+.colNum {
+   width: 60px;
+   text-align: right;
+}
+.colDelete {
+   width: 40px;
+   text-align: center;
+}
+.clear {
+   clear: both;
+}
+input,button {
+   font-size: 108%;
+}
+span.deleteprot,span.deleteinv,span.deletefilter {
+   cursor: pointer;
+   color: red;
+   font-weight: bold;
+   font-family: Arial;
+}
+.togglebtn {
+   color: #A0A0A0;
+   cursor: pointer;
+   padding-left: 15px;
+   text-shadow: 3px 3px 5px #c0c0c0;
+}
+.protocol_list_container {
+   margin-top: 50px;
+}
+#protfilter {
+   font-size: 70%;
+   padding-left: 40px;
+   display: none;
+   cursor: pointer;
+   color: #888;
+   font-weight: normal;
+}
+/*#protfilterclose {
+   color: #d99;
+   cursor: pointer;
+   padding-right: 5px;
+}*/
+#protfilter-headline {
+   display: none;
+}
+.numvalues {
+   font-size: 80%;
+   color: #AAA;
+   text-align: right;
+   padding-right: 10px;
+}
+#inventory_list .numvalues {
+   width: 470px;
+}
+#inventry_filter_container {
+   margin-bottom: 5px;
+}
+#protocol_list .numvalues {
+   width: 510px;
+}
+.dlg-food {
+   font-weight: bold;
+}
