@@ -12,11 +12,11 @@
    <body>
       <div class="input">
          <h2>Essen eingeben</h2>
-         Datum <input type="text" id="datetime" size="8"> &nbsp;&nbsp;
-         Essen <input type="text" id="inventory"> &nbsp;&nbsp;
-         Preis <input type="text" id="price" size="3"> &nbsp;&nbsp;
+         <div class="inputgroup"><label for="datetime">Datum</label> <input type="text" id="datetime" size="8"></div>
+         <div class="inputgroup"><label for="inventory">Essen</label> <input type="text" id="inventory"></div>
+         <div class="inputgroup"><label for="price">Preis</label> <input type="text" id="price" size="3"></div>
+         <div class="inputgroup"><button id="save">Speichern</button></div>
          <input type="hidden" id="invid" value="-1">
-         <button id="save">Speichern</button>
       </div>
       <div id="error-messages">
          <span id="error-messages-close">×</span>

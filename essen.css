@@ -100,6 +100,12 @@ body {
 input,button {
    font-size: 108%;
 }
+.inputgroup {
+   padding-right: 10px;
+   white-space: nowrap;
+   display:inline-block;
+   padding-bottom: 10px;
+}
 span.deleteprot,span.deleteinv,span.deletefilter {
    cursor: pointer;
    color: red;
@@ -113,7 +119,7 @@ span.deleteprot,span.deleteinv,span.deletefilter {
    text-shadow: 3px 3px 5px #c0c0c0;
 }
 .protocol_list_container {
-   margin-top: 50px;
+   margin-top: 30px;
 }
 #protfilter {
    font-size: 70%;
