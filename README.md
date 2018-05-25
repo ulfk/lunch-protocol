@@ -5,4 +5,5 @@ Be sure to copy essen_config_template.php to essen_config.php and configure the 
 
 After copying the files to a webserver point your browser to essen.html to start.
 
+# Screenshot
 ![Screnshot of lunch protocol page](https://github.com/ulfk/lunch-protocol/raw/master/essen-screenshot.png "Lunch protocol page")
