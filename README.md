@@ -4,3 +4,5 @@ Simple web applictaion to store consumed meals in a database. Programmed with Ja
 Be sure to copy essen_config_template.php to essen_config.php and configure the credentials of your MySQL database in the copied file.
 
 After copying the files to a webserver point your browser to essen.html to start.
+
+![Screnshot of lunch protocol page](https://github.com/ulfk/lunch-protocol/raw/master/essen-screenshot.png "Lunch protocol page")
