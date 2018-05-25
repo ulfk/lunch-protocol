@@ -156,10 +156,8 @@
       execAjax({ action: "listProtocol", year: yearVal, month: monthVal }, processReceivedProtocolList);
    }
    
-   function loadInventoryList(filterString) {
-      if(filterString == null) {
-         filterString = "";
-      }
+   function loadInventoryList() {
+      var filterString = $("#inventory_filter").val();
       var data = { action: "listInventory", filter: filterString };
       var orderby = $("#inventory_list").data("orderby");
       var orderdir = $("#inventory_list").data("orderdir");
@@ -225,7 +223,7 @@
          // Enter
          if (event.which == 13) {
             event.preventDefault();
-            loadInventoryList(filterString);
+            loadInventoryList();
          }
          if(filterString != "") {
             $("#invfilterdelete").show();
