@@ -341,7 +341,7 @@ function getParReq($name,$default)
       $resVal = $_GET["".$name];
    else
       $resVal = $default;
-   return preg_replace("/[^a-zA-Zäöüß0-9\-_ ]/", "", $resVal);
+   return preg_replace("/[^a-zA-Zäöüß0-9\-\.,_ ]/", "", $resVal);
 }
 
 function dbConnect()
